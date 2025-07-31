@@ -138,7 +138,7 @@ function clearForm() {
 }
 
 // функції відкриття і закриття модального вікна
-function openModal() {
+ export function openModal() {
 	refs.backdrop.classList.remove("is-hidden");
 	document.body.style.overflow = "hidden";
 	window.history.pushState({ modalOpen: true }, "");

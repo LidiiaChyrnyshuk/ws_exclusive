@@ -20,24 +20,53 @@ body {
 	align-items: center;
 	justify-content: center;
 	background-image: url(../images/body/ellipse_center_mob.webp),
-		url(../images/body/pattern_circle.webp), url(../images/body/ellipse_left_mob.webp),
+		url(../images/body/pattern_circle.webp),
+		url(../images/body/ellipse_left_mob.webp),
 		url(../images/body/ellipse_bottom_mob.webp);
 	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 	background-size: cover, cover, contain, contain;
-	background-position: top center,center, bottom left,
-		bottom right;
+	background-position: top center, center, bottom left, bottom right;
+}
+
+body::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	z-index: 2;
+	background-image: url(../images/hero/timer_mob.webp);
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-size: 800px 500px;
+	background-position: center 90px;
+	overflow: hidden;
 }
 
 @media screen and (min-width: 1024px) {
 	body {
 		background-image: url(../images/body/ellipse_centr_desk.webp),
-			url(../images/body/pattern_circle.webp), url(../images/body/ellipse_left_desk.webp),
-			url(../images/body/ellipse_bottom_right.webp), url(../images/body/ellipse_bottom_centr_desk.webp);
-		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat,no-repeat;
-		background-size: contain, contain, contain,  contain, contain;
-		background-position: top -5% center, center, bottom left,
-		bottom right,bottom center;
+			url(../images/body/pattern_circle.webp),
+			url(../images/body/ellipse_left_desk.webp),
+			url(../images/body/ellipse_bottom_right.webp),
+			url(../images/body/ellipse_bottom_centr_desk.webp);
+		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+		background-size: contain, contain, contain, contain, contain;
+		background-position: top -5% center, center, bottom left, bottom right,
+			bottom center;
 	}
+
+	body::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	z-index: 2;
+	background-image: url(../images/hero/timer_desk.webp);
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-size: 1100px 800px;
+	background-position: center 100px;
+}
 }
 
 .container {
@@ -48,4 +77,3 @@ body {
 	z-index: 10;
 	margin: 0 auto;
 }
-

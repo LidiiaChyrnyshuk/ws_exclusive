@@ -50,26 +50,30 @@
 						</ul>
 					</div>
 				</div>
-
-					<button
-						class="button button-prime"
-						type="button"
-						data-translate="btnRegistration"
-						data-modal-open
-					>
-						JOIN NOW
-					</button>
+				<div class="title"></div>
+				<div class="timer" id="countdown">
+					<div class="time-part" id="minutes">00</div>
+					<div class="colon">:</div>
+					<div class="time-part" id="seconds">00</div>
+					<div class="colon">:</div>
+					<div class="time-part" id="hundredths">00</div>
 				</div>
-				<div class="hero-img">
-					<div class="chip-wrap" id="chip"></div>
-					<div class="img-wrap" id="hero-image"></div>
+				<div class="focus">
+					<p class="focus_text">+ 100 free spins</p>
 				</div>
+				<button
+					class="button button-prime"
+					type="button"
+					data-translate="btnRegistration"
+					data-modal-open
+				>
+					JOIN NOW
+				</button>
 			</section>
 			<!--MODAL WINDOW-->
 			<div class="backdrop is-hidden" data-modal>
 				<form class="modal" id="registrationForm">
 					<div class="modal-header">
-						
 						<div class="header-modal">
 							<img class="modal-logo" src="./images/header/WS.svg" alt="logo" />
 							<button class="modal-close" type="button" data-modal-close>
@@ -85,7 +89,8 @@
 
 						<div>
 							<h2 class="modal-titel">
-								EXCLUSIVE<br> BONUS
+								EXCLUSIVE<br />
+								BONUS
 							</h2>
 							<div class="modal-bonus-wrap">
 								<p class="modal-bonus" data-translate="modalBonus">
@@ -221,9 +226,7 @@
 				</form>
 			</div>
 		</div>
-
 		<script src="./js/language.js" defer></script>
-
-		<script src="./js/chip-pulse.js"></script>
+		<script type="module" src="./js/timer.js"></script>
 	</body>
 </html>

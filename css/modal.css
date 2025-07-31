@@ -144,18 +144,15 @@
 	position: relative;
 	display: inline-block;
 	color: transparent;
-	  background: linear-gradient(
-    to bottom right,
-    rgba(255, 255, 255, 1),
-    rgba(81, 69, 117, 0.5)
-  );
+	background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 1),
+		rgba(81, 69, 117, 0.5)
+	);
 	-webkit-background-clip: text;
 	background-clip: text;
-text-shadow:
-  0 0 1px white,                             
-  0 0 4px rgba(255, 255, 255, 0.8),           
-  0 0 8px rgba(81, 69, 117, 0.5),            
-  0 0 16px rgba(81, 69, 117, 0.6);           
+	text-shadow: 0 0 1px white, 0 0 4px rgba(255, 255, 255, 0.8),
+		0 0 8px rgba(81, 69, 117, 0.5), 0 0 16px rgba(81, 69, 117, 0.6);
 }
 
 /* .modal-titel::after {
@@ -221,7 +218,6 @@ text-shadow:
 		line-height: 18px;
 	}
 }
-
 
 .lang-HU [data-translate="modalBonus"],
 .lang-TR [data-translate="modalBonus"] {
