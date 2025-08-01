@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const hundredthsEl = document.getElementById("hundredths");
 
 	// Встановлюємо час завершення: зараз + 10 хв
-	const endTime = Date.now() + 1 * 60 * 1000;
+	const endTime = Date.now() + 10 * 60 * 1000;
 
 	const interval = setInterval(() => {
 		const now = Date.now();

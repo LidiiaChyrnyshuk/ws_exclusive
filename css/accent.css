@@ -1,0 +1,33 @@
+.blau-gift-wrap {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 49.23vw;
+	height: 51.28vw;
+	max-width: 328px;
+	max-height: 341px;
+	z-index: 30;
+}
+.speaker {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 336px;
+	height: 288px;
+	z-index: 3;
+	background-image: url(../images/hero/speaker_mob.webp);
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+
+@media screen and (min-width:1024px) {
+  .blau-gift-wrap {
+    display: none;
+  }
+  .speaker {
+    display: none;
+  }
+}
