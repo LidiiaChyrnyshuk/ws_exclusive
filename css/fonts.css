@@ -26,3 +26,16 @@
 	font-weight: 200;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: "SpaceGrotesk";
+	src: url("../fonts/SpaceGrotesk-Bold.ttf") format("opentype");
+	font-weight: 700;
+	font-style: bold;
+}
+@font-face {
+	font-family: "KodeMono";
+	src: url("../fonts/KodeMono-VariableFont_wght.ttf") format("opentype");
+	font-weight: 700;
+	font-style: normal;
+}
