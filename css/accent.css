@@ -23,11 +23,72 @@
 	overflow: hidden;
 }
 
-@media screen and (min-width:1024px) {
-  .blau-gift-wrap {
-    display: none;
-  }
-  .speaker {
-    display: none;
-  }
+.freepik-rigt {
+	display: none;
+}
+
+.freepik-left {
+	display: none;
+}
+.lila-gift {
+	display: none;
+}
+
+@media screen and (min-width: 1024px) {
+	.blau-gift-wrap {
+		width: 15.92vw;
+		height: 16.57vw;
+		max-width: 700px;
+		max-height: 650px;
+    border: 2px solid red;
+    bottom: 15%;
+    right: 10%;
+	}
+	.speaker {
+		display: none;
+	}
+
+	.freepik-rigt {
+		display: block;
+		position: absolute;
+		top: 10%;
+		right: 0;
+		background-image: url(../images/hero/freepik__right_desk.webp);
+		opacity: 1;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		overflow: hidden;
+		width: 26.31vw;
+		height: 23.02vw;
+    		max-width: 700px;
+		max-height: 650px;
+	}
+
+	.freepik-left {
+		display: block;
+		position: absolute;
+		bottom: 5%;
+		left: 0;
+		background-image: url(../images/hero/freepik__left.webp);
+		opacity: 1;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		overflow: hidden;
+		width: 26.31vw;
+		height: 23.02vw;
+		min-width: 267px;
+		min-height: 182px;
+		border: 2px solid red;
+	}
+
+	.lila-gift {
+		display: block;
+		position: absolute;
+		top: 8%;
+		left: 0;
+		width: 19.73vw;
+		height: 20.39vw;
+	}
 }
