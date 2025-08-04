@@ -1,4 +1,3 @@
-
 .button {
 	width: 342px;
 	height: 64px;
@@ -18,7 +17,7 @@
 }
 
 .button-prime {
-margin-bottom: 150px;
+	margin-bottom: 150px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -29,3 +28,4 @@ margin-bottom: 150px;
 		margin-bottom: 139px;
 	}
 }
+
