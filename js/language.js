@@ -4,6 +4,10 @@
 			bonus: "+ 100 Free spins",
 			btnRegistration: "JOIN NOW",
 			modalBonus: "+ 100 Free spins",
+			labelEmail: "Email*",
+			placeholderEmail: "Email",
+			labelPassword: "Password*",
+			placeholderPassword: "Password",
 			checkbox:
 				"By ticking this box to register for this website, the user declares to be over 18 years old and to have read, understood and accepted",
 			terms: "the Terms and Conditions",
@@ -17,6 +21,10 @@
 			bonus: "+ 100 ingyenes pörgetés",
 			btnRegistration: "Csatlakozz most",
 			modalBonus: "+ 100 ingyenes pörgetés",
+			labelEmail: "Email*",
+			placeholderEmail: "Email",
+			labelPassword: "Password*",
+			placeholderPassword: "Password",
 			checkbox:
 				"A jelölőnégyzet kipipálásával a felhasználó kijelenti, hogy elmúlt 18 éves, és elolvasta, megértette és elfogadta",
 			terms: "a Felhasználási feltételeket",
@@ -30,6 +38,10 @@
 			bonus: "+ 100 rodadas grátis",
 			btnRegistration: "Juntar‑te agora",
 			modalBonus: "+ 100 rodadas grátis",
+			labelEmail: "Email*",
+			placeholderEmail: "Email",
+			labelPassword: "Password*",
+			placeholderPassword: "Password",
 			checkbox:
 				"Ao marcar esta caixa para se registar neste site, o utilizador declara ser maior de 18 anos e ter lido, compreendido e aceite",
 			terms: "os Termos e Condições",
@@ -43,6 +55,10 @@
 			bonus: "+ 100 ФРИСПИНОВ",
 			btnRegistration: "Забрать сейчас",
 			modalBonus: "+ 100 ФРИСПИНОВ",
+			labelEmail: "Email*",
+			placeholderEmail: "Email",
+			labelPassword: "Password*",
+			placeholderPassword: "Password",
 			checkbox:
 				"Ставя галочку в этом поле для регистрации на сайте, пользователь подтверждает, что ему больше 18 лет, и что он прочитал, понял и принял",
 			terms: "Условия и положения",
@@ -56,6 +72,10 @@
 			bonus: "+ 100 freespinů",
 			btnRegistration: "Připojte se teď",
 			modalBonus: "+ 100 freespinů",
+			labelEmail: "Email*",
+			placeholderEmail: "Email",
+			labelPassword: "Password*",
+			placeholderPassword: "Password",
 			checkbox:
 				"Zaškrtnutím tohoto políčka pro registraci na webu uživatel potvrzuje, že je mu více než 18 let, a že si přečetl, pochopil a přijal",
 			terms: "Podmínky použití",
@@ -69,6 +89,10 @@
 			bonus: "+ 100 Free spins",
 			btnRegistration: "JOIN NOW",
 			modalBonus: "+ 100 Free spins",
+			labelEmail: "Email*",
+			placeholderEmail: "Email",
+			labelPassword: "Password*",
+			placeholderPassword: "Password",
 			checkbox:
 				"By ticking this box to register for this website, the user declares to be over 18 years old and to have read, understood and accepted",
 			terms: "the Terms and Conditions",
@@ -82,6 +106,10 @@
 			bonus: "+ 100 Ücretsiz Döndürme",
 			btnRegistration: "Şimdi katıl",
 			modalBonus: "+ 100 Ücretsiz Döndürme",
+			labelEmail: "Email*",
+			placeholderEmail: "Email",
+			labelPassword: "Password*",
+			placeholderPassword: "Password",
 			checkbox:
 				"Bu kutuyu işaretleyerek, kullanıcı 18 yaşından büyük olduğunu ve şartları okuyup anladığını kabul eder",
 			terms: "the Terms and Conditions",
@@ -103,7 +131,7 @@
 		if (!translations[lang]) return;
 
 		document.body.className = `lang-${lang}`;
-
+		// Переклад текстового контенту
 		document.querySelectorAll("[data-translate]").forEach((el) => {
 			const key = el.dataset.translate;
 			const fallbackLang = "EN";
@@ -112,6 +140,15 @@
 
 			if (translation !== undefined) {
 				el.textContent = translation;
+			}
+		});
+		// Переклад плейсхолдерів
+		document.querySelectorAll("[data-translate-placeholder]").forEach((el) => {
+			const key = el.dataset.translatePlaceholder;
+			const translation =
+				translations[lang][key] ?? translations[fallbackLang][key];
+			if (translation !== undefined) {
+				el.placeholder = translation;
 			}
 		});
 
