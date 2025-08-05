@@ -156,14 +156,17 @@
 .lang-RU [data-translate="bonus"],
 .lang-PT [data-translate="bonus"],
 .lang-TR [data-translate="bonus"] {
-	font-size: 28px;
-	line-height: 28px;
+	font-size: 26px;
+	line-height: 1.1;
 }
 @media screen and (min-width: 1024px) {
 	.lang-HU [data-translate="bonus"],
-	.lang-RU [data-translate="bonus"],
 	.lang-PT [data-translate="bonus"],
 	.lang-TR [data-translate="bonus"] {
+		font-size: 40px;
+		line-height: 1.1;
+	}
+	.lang-RU [data-translate="bonus"] {
 		font-size: 48px;
 		line-height: 48px;
 	}
