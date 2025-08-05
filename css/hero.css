@@ -136,7 +136,7 @@
 		gap: 12px;
 	}
 	.time-part {
-		font-size: 90px;
+		font-size: 84px;
 	}
 	.colon {
 		width: 10px;
@@ -156,15 +156,15 @@
 .lang-RU [data-translate="bonus"],
 .lang-PT [data-translate="bonus"],
 .lang-TR [data-translate="bonus"] {
-	font-size: 30px;
-	line-height: 30px;
+	font-size: 28px;
+	line-height: 28px;
 }
 @media screen and (min-width: 1024px) {
 	.lang-HU [data-translate="bonus"],
 	.lang-RU [data-translate="bonus"],
 	.lang-PT [data-translate="bonus"],
 	.lang-TR [data-translate="bonus"] {
-		font-size: 50px;
-		line-height: 50px;
+		font-size: 48px;
+		line-height: 48px;
 	}
 }
